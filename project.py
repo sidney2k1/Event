@@ -1,0 +1,20 @@
+from tkinter import *
+window=Tk()
+window.title("Centimeter converter")
+window.geometry("400x300")
+lbl1=Label(text="Inches to cm")
+lbl2=Label(text="enter in inches")
+input2=Entry()
+def math():
+    sum=input2.get()
+    sum=float(sum)
+    sum=sum*2.54
+    textbox.insert(END,sum)
+textbox=Text(height=1)
+button=Button(text="convert to cm",command=math)
+lbl1.pack()
+lbl2.pack()
+textbox.pack()
+button.pack()
+input2.pack()
+window.mainloop()
